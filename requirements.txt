@@ -1,5 +1,5 @@
---extra-index-url https://download.pytorch.org/whl/cpu
 streamlit>=1.45,<2
-torch==2.6.0+cpu
+torch @ https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp314-cp314-manylinux_2_28_x86_64.whl ; sys_platform == "linux"
+torch==2.14.0 ; sys_platform != "linux"
 numpy>=2,<3
 Pillow>=11,<13
